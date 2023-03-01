@@ -34,21 +34,22 @@ async def start(event):
     if not event.is_private:
         return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥺")
     await event.reply(
-        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n*ʜᴇʟʟᴏ {} !*\n✪ ɪ ᴀᴍ ᴀʟᴇxᴀ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n*ʜᴇʟʟᴏ {fullname} !*\n✪ ɪ ᴀᴍ ᴀʟᴇxᴀ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=(
             [
                 Button.url(
                     "➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ➕",
-                    "https://t.me/Alexa_MentionBot?startgroup=true",
+                    "https://t.me/BlooDy_sweeT_of_PrincE_boT?startgroup=true",
                 ),
             ],
             [
-                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Shayri_Music_Lovers"),
-                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/AsadSupport"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ],
             [
-                Button.url("⚡ OWNER ⚡", "https://t.me/Jankar_Ki_Duniya"),
+                Button.url("⚡ OWNER ⚡", "https://t.me/thavaraj"),
+                Button.url("⚡ HELP ⚡", "/help"),
             ],
         ),
     )
@@ -65,8 +66,8 @@ async def help(event):
         link_preview=False,
         buttons=(
             [
-                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Shayri_Music_Lovers"),
-                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/AsadSupport"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ]
         ),
     )
@@ -83,8 +84,8 @@ async def help(event):
         link_preview=False,
         buttons=(
             [
-                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Shayri_Music_Lovers"),
-                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/AsadSupport"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ]
         ),
     )
