@@ -34,22 +34,22 @@ async def start(event):
     if not event.is_private:
         return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥺")
     await event.reply(
-        ""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ *ʜᴇʟʟᴏ {} !*\n✪ɪ ᴀᴍ PRINCE⚡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ\n✪Any Questions Contact Owner\n\n━━━━━━━━━━━━━━━━━━━━━━━━",",
+        ""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ *ʜᴇʟʟᴏ {} !*\n✪ɪ ᴀᴍ PRINCE⚡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ\n✪Any Questions Contact Owner\nAny Comments /help ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",",
         link_preview=False,
         buttons=(
             [
                 Button.url(
-                    "☀︎︎️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☀︎︎",
-                    "https://t.me/Alexa_MentionBot?startgroup=true",
+                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
+                    "url=f"t.me/{BOT_USERNAME}?startgroup=true",
                 ),
             ],
             [
-                Button.url("☀︎︎ ɢʀᴏᴜᴘ ☀︎︎︎", "https://t.me/Shayri_Music_Lovers"),
-                Button.url("☀︎︎ ᴄʜᴀɴɴᴇʟ ☀︎︎", "https://t.me/AsadSupport"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ],
             [
-                Button.url("☀︎︎ ʙʀᴏ ☀︎︎️️", "https://t.me/HarshitSharma361"),
-                Button.url("☀︎︎ ᴋɪɴɢ ☀︎︎︎", "https://t.me/Jankar_Ki_Duniya"),
+                Button.url("owner ⚡", "https://t.me/thavarajtj"),
+
             ],
         ),
     )
