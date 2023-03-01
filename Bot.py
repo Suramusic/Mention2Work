@@ -34,22 +34,21 @@ async def start(event):
     if not event.is_private:
         return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥺")
     await event.reply(
-        ""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ *ʜᴇʟʟᴏ {} !*\n✪ɪ ᴀᴍ PRINCE⚡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ\n✪Any Questions Contact Owner\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n*ʜᴇʟʟᴏ {} !*\n✪ ɪ ᴀᴍ ᴀʟᴇxᴀ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=(
             [
                 Button.url(
-                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
-                    "url=f"t.me/{BOT_USERNAME}?startgroup=true",
+                    "➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ➕",
+                    "https://t.me/Alexa_MentionBot?startgroup=true",
                 ),
             ],
             [
-                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
-                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Shayri_Music_Lovers"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/AsadSupport"),
             ],
             [
-                Button.url("owner ⚡", "https://t.me/thavarajtj"),
-
+                Button.url("⚡ OWNER ⚡", "https://t.me/Jankar_Ki_Duniya"),
             ],
         ),
     )
@@ -60,14 +59,14 @@ async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
         return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
-    helptext = "✪ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ᴀʟᴇxᴀ ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴄᴏᴍᴍᴀɴᴅ: /mentionall\n✪ ᴄᴏᴍᴍᴀɴᴅ: /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ ɢᴏɪɴɢ ᴏɴ ᴘʀᴏᴄᴇss.\n✪ ᴄᴏᴍᴍᴀɴᴅ /admin ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴀᴅᴍɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n✪ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n✪ `Example: /mentionall Good Morning!`\n✪ Yᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ. Bᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇsssᴀɢᴇ."
+    helptext = "✪ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ PRINCE ᴍᴇɴᴛɪᴏɴ\n\nᴄᴏᴍᴍᴀɴᴅ⚡\n✪ ᴄᴏᴍᴍᴀɴᴅ: /mentionall\n✪ ᴄᴏᴍᴍᴀɴᴅ: /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ ɢᴏɪɴɢ ᴏɴ ᴘʀᴏᴄᴇss.\n✪ ᴄᴏᴍᴍᴀɴᴅ /admin ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴀᴅᴍɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n✪ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n✪ `Example: /mentionall Good Morning!`\n✪ Yᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ. Bᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇsssᴀɢᴇ."
     await event.reply(
         helptext,
         link_preview=False,
         buttons=(
             [
-                Button.url("☀︎︎ ʜᴇᴀʀᴛ", "https://t.me/Give_Me_Heart"),
-                Button.url("ʏᴏᴜᴛᴜʙᴇ ☀︎︎", "https://www.youtube.com/c/JankariKiDuniya"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Shayri_Music_Lovers"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/AsadSupport"),
             ]
         ),
     )
@@ -78,14 +77,14 @@ async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
         return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
-    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ ᴀʟᴇxᴀ ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali)\n✪ ᴏғғɪᴄɪᴀʟ ᴍᴇᴍʙᴇʀ ᴏғ ʀᴏᴄᴋs\n✪ ʏᴏᴜᴛᴜʙᴇ [ᴄʜᴀɴɴᴇʟ](https://www.youtube.com/c/JankariKiDuniya)\n✪ ғᴜᴛᴜʀᴇ ᴀɴᴇsᴛʜᴇᴛɪᴄ."
+    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ PRINCE ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [FATHER](https://t.me/thavarajtj)\n✪ MoViE [ᴄʜᴀɴɴᴇʟ](https://t.me/Alinallmovies)."
     await event.reply(
         helptext,
         link_preview=False,
         buttons=(
             [
-                Button.url("☀︎︎ ʜᴇᴀʀᴛ", "https://t.me/Give_Me_Heart"),
-                Button.url("ʏᴏᴜᴛᴜʙᴇ ☀︎︎", "https://www.youtube.com/c/JankariKiDuniya"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Shayri_Music_Lovers"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/AsadSupport"),
             ]
         ),
     )
