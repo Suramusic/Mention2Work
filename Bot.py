@@ -66,7 +66,7 @@ async def help(event):
     await event.reply(
         helptext,
         link_preview=False,
-        buttons=(
+        button=(
             [
                 Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
                 Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
