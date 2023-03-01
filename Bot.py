@@ -1,6 +1,6 @@
 # A Powerful Music And Management Bot
 # Property Of Rocks Indian Largest Chatting Group
-# Rocks Š @Dr_Asad_Ali Š Rocks
+# Rocks © @Dr_Asad_Ali © Rocks
 # Owner Asad Ali + Harshit Sharma + Abhimanyu Singh + Krishna Ki Diwani
 
 
@@ -21,9 +21,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("APP_ID", "28420275"))
-api_hash = os.environ.get("API_HASH", "ee41d63cbcf69ab63a3514642785a349")
-bot_token = os.environ.get("TOKEN", "5948498614:AAGldqJ9CgnMzfbEX5Tp2WSXYUkXG5qJSE4")
+api_id = int(os.environ.get("APP_ID", ""))
+api_hash = os.environ.get("API_HASH", "")
+bot_token = os.environ.get("TOKEN", "")
 client = TelegramClient("client", api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
@@ -32,26 +32,26 @@ spam_chats = []
 async def start(event):
     chat_id = event.chat_id
     if not event.is_private:
-        return await event.respond("? ?? ????? ??")
+        return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥺")
     await event.reply(
-        "????????????????????????\n\n? *????? {} !*\n?? ?? PRINCE? ?? ??????? ??? ??? ????? ??????s ?? ????????\n? ?????s ??? ?s???\n?Any Questions Contact Owner\n\n????????????????????????",
+        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ *ʜᴇʟʟᴏ {} !*\n✪ɪ ᴀᴍ PRINCE⚡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ\n✪Any Questions Contact Owner\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=(
             [
                 Button.url(
-                    "? ??? ?? ?? ???? ????? ?",
+                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
                     "url=f"t.me/{BOT_USERNAME}?startgroup=true",
                 ),
             ],
             [
-                Button.url("?????", "https://t.me/Alinallmovies"),
-                Button.url("???????", "https://t.me/Alinallmovies"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ],
             [
-                Button.url("owner ?", "https://t.me/thavarajtj"),
+                Button.url("owner ⚡", "https://t.me/thavarajtj"),
             ],
             [
-                Button.url(" HELP ?", "/help"),
+                Button.url(" HELP ✨", "/help"),
             ],
         ),
     )
@@ -61,15 +61,15 @@ async def start(event):
 async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
-        return await event.respond("???? s???? ?? ?? ?? ?? ?s? ???s ??????? ??")
-    helptext = "? ???? ???? ?? PRINCE? ???????\n\nCOMMANDS?\n\n? ???????: /mentionall\n? ???????: /cancel ?? ?????? ????? ?? ?????ss.\n? ??????? /admin ?? ??????? ??? ????? ???? ?????\n? Y?? ??? ?s? ???s ??????? ???? ??x? ???? ??? ???? ?? ??????? ?????s.\n\n?Example\n/mentionall Good Morning?\n\n? Y?? ??? ??? ???s ??????? ?s ? ????? ?? ??? ??ss???. B?? ???? ??? ?s??s ?? ???? ??????? ??sss???."
+        return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
+    helptext = "✪ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ PRINCE⚡ ᴍᴇɴᴛɪᴏɴ\n\nCOMMANDS⚡\n\n✪ ᴄᴏᴍᴍᴀɴᴅ: /mentionall\n✪ ᴄᴏᴍᴍᴀɴᴅ: /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ ɢᴏɪɴɢ ᴏɴ ᴘʀᴏᴄᴇss.\n✪ ᴄᴏᴍᴍᴀɴᴅ /admin ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴀᴅᴍɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ\n✪ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜ ᴛᴇxᴛ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs.\n\n✨Example\n/mentionall Good Morning⚡\n\n✪ Yᴏᴜ ᴄᴀɴ ʏᴏᴜ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ. Bᴏᴛ ᴡɪʟʟ ᴛᴀɢ ᴜsᴇʀs ᴛᴏ ᴛʜᴀᴛ ʀᴇᴘʟɪᴇᴅ ᴍᴇsssᴀɢᴇ."
     await event.reply(
         helptext,
         link_preview=False,
         buttons=(
             [
-                Button.url("?????", "https://t.me/Alinallmovies"),
-                Button.url("???????", "https://t.me/Alinallmovies"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ]
         ),
     )
@@ -79,15 +79,15 @@ async def help(event):
 async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
-        return await event.respond("???? s???? ?? ?? ?? ?? ?s? ???s ??????? ??")
-    helptext = "? ????? ???? ?? PRINCE ???????\n\n? ?? ????? ?s [PRINCE](https://t.me/thavarajtj)\n? Join AND Enjoy Watch MOVIES\n? Movie[???????](https://t.me/Alinallmovies)."
+        return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
+    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ PRINCE ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [PRINCE](https://t.me/thavarajtj)\n✪ Join AND Enjoy Watch MOVIES\n✪ Movie[ᴄʜᴀɴɴᴇʟ](https://t.me/Alinallmovies)."
     await event.reply(
         helptext,
         link_preview=False,
         buttons=(
             [
-                Button.url("?????", "https://t.me/Alinallmovies"),
-                Button.url("???????", "https://t.me/Alinallmovies"),
+                Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ]
         ),
     )
@@ -158,7 +158,7 @@ async def mentionall(event):
 async def _(event):
     chat_id = event.chat_id
     if event.is_private:
-        return await event.respond("s???? ??? ??? ??????? ????? ???? ?? ?????")
+        return await event.respond("sᴏʀʀʏ ʏᴏᴜ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ᴀᴅᴍɪɴ ᴏɴʟʏ ɪɴ ɢʀᴏᴜᴘ")
 
     is_admin = False
     try:
@@ -171,10 +171,10 @@ async def _(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.respond("???? ????? ??? ??????? ????? ?????s")
+        return await event.respond("ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴍᴇɴᴛɪᴏɴ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs")
 
     if event.pattern_match.group(1) and event.is_reply:
-        return await event.respond("???? s??? ??x? ?? ???????")
+        return await event.respond("ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ")
     elif event.pattern_match.group(1):
         mode = "text_on_cmd"
         msg = event.pattern_match.group(1)
@@ -183,11 +183,11 @@ async def _(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__? ???'? ??????? ??????s ??? ????? ??ss???s! (??ss???s ????? ??? s??? ?????? ?'? ????? ?? ?????)__"
+                "__ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ꜰᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇꜰᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ)__"
             )
     else:
         return await event.respond(
-            "__????? ?? ? ??ss??? ?? ???? ?? s??? ??x? ?? ??????? ?????s!__"
+            "__ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴍᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴏᴛʜᴇʀs!__"
         )
 
     spam_chats.append(chat_id)
@@ -232,5 +232,5 @@ client.run_until_disconnected()
 
 # A Powerful Music And Management Bot
 # Property Of Rocks Indian Largest Chatting Group
-# Rocks Š @Dr_Asad_Ali Š Rocks
+# Rocks © @Dr_Asad_Ali © Rocks
 # Owner Asad Ali + Harshit Sharma + Abhimanyu Singh + Krishna Ki Diwani
