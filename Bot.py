@@ -52,8 +52,7 @@ async def start(event):
             [
                 Button.url(" HELP ✨", "/help"),
             ],
-        ),
-    )
+        )
 
 
 @client.on(events.NewMessage(pattern="^/help$"))
@@ -69,8 +68,7 @@ async def help(event):
                 Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
                 Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ]
-        ),
-    )
+        )
 
 
 @client.on(events.NewMessage(pattern="^/owner$"))
@@ -86,8 +84,7 @@ async def help(event):
                 Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
                 Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
             ]
-        ),
-    )
+        )
 
 
 @client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
