@@ -39,7 +39,7 @@ async def start(event):
             [
                 Button.url(
                     "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
-                    "url=f"https://t.me/BlooDy_sweeT_of_PrincE_boT?startgroup=true",
+                    "https://t.me/BlooDy_sweeT_of_PrincE_boT?startgroup=true",
                 ),
             ],
             [
