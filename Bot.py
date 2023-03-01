@@ -51,8 +51,7 @@ async def start(event):
             ],
             [
                 Button.url(" HELP ✨", "/help"),
-            ],
-        )
+            ]
 
 
 @client.on(events.NewMessage(pattern="^/help$"))
