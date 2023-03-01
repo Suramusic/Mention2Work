@@ -36,7 +36,6 @@ async def start(event):
     await event.reply(
         "━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ *ʜᴇʟʟᴏ {} !*\n✪ɪ ᴀᴍ PRINCE⚡ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ\n✪Any Questions Contact Owner\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
-        buttons=(
             [
                 Button.url(
                     "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
@@ -66,7 +65,6 @@ async def help(event):
     await event.reply(
         helptext,
         link_preview=False,
-        button=(
             [
                 Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
                 Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
@@ -84,7 +82,6 @@ async def help(event):
     await event.reply(
         helptext,
         link_preview=False,
-        buttons=(
             [
                 Button.url("ɢʀᴏᴜᴘ", "https://t.me/Alinallmovies"),
                 Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Alinallmovies"),
