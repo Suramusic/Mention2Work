@@ -33,7 +33,7 @@ async def start(event):
     chat_id = event.chat_id
     if not event.is_private:
         return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥺")
-    await event.reply(photo=https://telegra.ph/file/a2b258558a77c1159c31a.jpg,
+    await event.reply(photo=Prince, "https://telegra.ph/file/a2b258558a77c1159c31a.jpg",
         "━━━━━━━━━━━━━━━━━━━━━━━━\n\nHello {wish} {message.from_user.first_name }\n✪ ɪ ᴀᴍ ᴀʟᴇxᴀ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=(
