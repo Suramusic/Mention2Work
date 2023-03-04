@@ -136,7 +136,7 @@ async def mentionall(event):
             break
         usrnum += 1
         usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
-        if usrnum == 5:
+        if usrnum == 1:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
                 await client.send_message(chat_id, txt)
@@ -196,7 +196,7 @@ async def _(event):
             break
         usrnum += 1
         usrtxt += f" \n [{x.first_name}](tg://user?id={x.id})"
-        if usrnum == 5:
+        if usrnum == 1:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
                 await client.send_message(chat_id, txt)
