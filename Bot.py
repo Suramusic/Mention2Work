@@ -91,9 +91,9 @@ async def help(event):
 
 
 @client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
-@client.on(events.NewMessage(pattern="^/@all ?(.*)"))
+@client.on(events.NewMessage(pattern="^@all ?(.*)"))
 @client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
-@client.on(events.NewMessage(pattern="^/#all ?(.*)"))
+@client.on(events.NewMessage(pattern="^#all ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
@@ -139,7 +139,7 @@ async def mentionall(event):
             break
         usrnum += 1
         usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
-        if usrnum == 100:
+        if usrnum == 10:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
                 await client.send_message(chat_id, txt)
@@ -199,7 +199,7 @@ async def _(event):
             break
         usrnum += 1
         usrtxt += f" \n [{x.first_name}](tg://user?id={x.id})"
-        if usrnum == 100:
+        if usrnum == 10:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
                 await client.send_message(chat_id, txt)
