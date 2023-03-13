@@ -155,10 +155,7 @@ async def mentionall(event):
         pass
 
 
-@client.on(events.NewMessage(pattern="^/admins ?(.*)"))
-@client.on(events.NewMessage(pattern="^/admin ?(.*)"))
-@client.on(events.NewMessage(pattern="^@admin ?(.*)"))
-@client.on(events.NewMessage(pattern="^@admins ?(.*)"))
+@client.on(events.NewMessage(pattern="^/admins|/admin|@admin|@admins ?(.*)"))
 async def _(event):
     chat_id = event.chat_id
     if event.is_private:
