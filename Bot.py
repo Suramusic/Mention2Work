@@ -94,6 +94,10 @@ async def help(event):
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
 @client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
 @client.on(events.NewMessage(pattern="^#all ?(.*)"))
+@client.on(events.NewMessage(pattern="^#abhi ?(.*)"))
+@client.on(events.NewMessage(pattern="^/abhi ?(.*)"))
+@client.on(events.NewMessage(pattern="^@abhi ?(.*)"))
+@client.on(events.NewMessage(pattern="^/mentionabi ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
