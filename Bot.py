@@ -21,9 +21,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("APP_ID", "7575017"))
-api_hash = os.environ.get("API_HASH", "0797579f0d1fc632a68a151624372557")
-bot_token = os.environ.get("TOKEN", "5920443941:AAGQjA6m9y7bmI9fkgmG5AYoTrfmLaSXuIo")
+api_id = int(os.environ.get("APP_ID", ""))
+api_hash = os.environ.get("API_HASH", "")
+bot_token = os.environ.get("TOKEN", "")
 client = TelegramClient("client", api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
@@ -34,7 +34,7 @@ async def start(event):
     if not event.is_private:
         return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ 🥺")
     await event.reply(
-        "━━━━━━━━━━━━━━━━━━━━━━━━\n\nHҽʅʅσ Tԋιʂ Iʂ Gɾσυρ MҽɳƚισɳRσBσƚ\n✪ ɪ ᴀᴍ ʟᴀʟʟᴜ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ᴛʜɪꜱ ʙᴏᴛ ᴡᴏʀᴋꜱ 10ᴋ+ ᴍᴇᴍʙᴇʀꜱ ɢʀᴏᴜᴘ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐆𝐑𝐎𝐔𝐏 𝐅𝐀𝐒𝐓 𝐌𝐄𝐍𝐓𝐈𝐎𝐍𝐁𝐎𝐓\n✪ ɪ ᴀᴍ ʟᴀʟʟᴜ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ\n✪ᴛʜɪꜱ ʙᴏᴛ ᴡᴏʀᴋꜱ 10ᴋ+ ᴍᴇᴍʙᴇʀꜱ ɢʀᴏᴜᴘ\n✪ ᴜᴘᴛᴏ 20 ᴍᴇᴍʙᴇʀꜱ ᴛᴀɢ ᴀᴛ ꜱᴀᴍᴇ ᴛɪᴍᴇ\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=(
             [
@@ -93,11 +93,8 @@ async def help(event):
 @client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
 @client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
-@client.on(events.NewMessage(pattern="^#all ?(.*)"))
-@client.on(events.NewMessage(pattern="^#abhi ?(.*)"))
-@client.on(events.NewMessage(pattern="^/abhi ?(.*)"))
-@client.on(events.NewMessage(pattern="^@abhi ?(.*)"))
-@client.on(events.NewMessage(pattern="^/mentionabi ?(.*)"))
+@client.on(events.NewMessage(pattern="^@tgm ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tgm ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
@@ -158,7 +155,10 @@ async def mentionall(event):
         pass
 
 
-@client.on(events.NewMessage(pattern="^/admins|/admin|@admin|@admins ?(.*)"))
+@client.on(events.NewMessage(pattern="^/admins ?(.*)"))
+@client.on(events.NewMessage(pattern="^/admin ?(.*)"))
+@client.on(events.NewMessage(pattern="^@admin ?(.*)"))
+@client.on(events.NewMessage(pattern="^@admins ?(.*)"))
 async def _(event):
     chat_id = event.chat_id
     if event.is_private:
