@@ -35,7 +35,7 @@ async def start(event):
     if not event.is_private:
         return await event.respond("ɪ ᴀᴍ ᴀʟɪᴠᴇ ⚡")
     await event.reply(
-        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐆𝐑𝐎𝐔𝐏 𝐅𝐀𝐒𝐓 𝐌𝐄𝐍𝐓𝐈𝐎𝐍𝐁𝐎𝐓.\n✪ ɪ ᴀᴍ ᴛɢᴍ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ.\n✪ᴛʜɪꜱ ʙᴏᴛ ᴡᴏʀᴋꜱ 10ᴋ+ ᴍᴇᴍʙᴇʀꜱ ɢʀᴏᴜᴘ.\n✪ ᴜᴘᴛᴏ 20 ᴍᴇᴍʙᴇʀꜱ ᴛᴀɢ ᴀᴛ ꜱᴀᴍᴇ ᴛɪᴍᴇ.\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
+        "━━━━━━━━━━━━━━━━━━━━━━━━\n\n𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐆𝐑𝐎𝐔𝐏 𝐅𝐀𝐒𝐓 𝐌𝐄𝐍𝐓𝐈𝐎𝐍𝐁𝐎𝐓.\n✪ ɪ ᴀᴍ ᴛɢᴍ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ.\n✪ᴛʜɪꜱ ʙᴏᴛ ᴡᴏʀᴋꜱ 10ᴋ+ ᴍᴇᴍʙᴇʀꜱ ɢʀᴏᴜᴘ.\n✪ ᴜᴘᴛᴏ 50 ᴍᴇᴍʙᴇʀꜱ ᴛᴀɢ ᴀᴛ ꜱᴀᴍᴇ ᴛɪᴍᴇ.\n✪ ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ʀᴜɴ /help..\n\n━━━━━━━━━━━━━━━━━━━━━━━━",
         link_preview=False,
         buttons=(
             [
@@ -94,6 +94,8 @@ async def help(event):
 @client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
 @client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
 @client.on(events.NewMessage(pattern="^/tgm ?(.*)"))
+@client.on(events.NewMessage(pattern="^@tgm ?(.*)"))
+@client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
@@ -139,7 +141,7 @@ async def mentionall(event):
             break
         usrnum += 1
         usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
-        if usrnum == 20:
+        if usrnum == 50:
             if mode == "text_on_cmd":
                 txt = f"{usrtxt}\n\n{msg}"
                 await client.send_message(chat_id, txt)
