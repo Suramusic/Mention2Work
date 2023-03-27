@@ -41,7 +41,7 @@ async def start(event):
             [
                 Button.url(
                     "➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ➕",
-                    "https://t.me/BlooDy_sweeT_of_PrincE_boT?startgroup=true",
+                    "https://t.me/TgmMentionBot?startgroup=true",
                 ),
             ],
             [
@@ -78,7 +78,7 @@ async def help(event):
     chat_id = event.chat_id
     if not event.is_private:
         return await event.respond("ᴅᴇᴀʀ sᴛᴀʀᴛ ᴍᴇ ɪɴ ᴘᴍ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴғ 🥺")
-    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ 𝐏𝐑𝐈𝐍𝐂𝐄 ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [ꜰᴀᴛʜᴇʀ](https://t.me/thavarajtj)\n✪ ᴍᴏᴠɪᴇ [ᴄʜᴀɴɴᴇʟ](https://t.me/Alinallmovies)."
+    helptext = "✪ ᴏᴡɴᴇʀ ᴍᴇɴᴜ ᴏғ TGM ᴍᴇɴᴛɪᴏɴ\n\n✪ ᴍʏ ᴏᴡɴᴇʀ ɪs [ꜰᴀᴛʜᴇʀ](https://t.me/thavarajtj)\n✪ ᴍᴏᴠɪᴇ [ᴄʜᴀɴɴᴇʟ](https://t.me/Alinallmovies)."
     await event.reply(
         helptext,
         link_preview=False,
